@@ -1,0 +1,26 @@
+{
+	"player_table_1" : {
+		"host" : "Johnny",
+		"group" : "player",
+	},
+	"player_table_2" : {
+		"host" : "Cass",
+		"group" : "player",
+	},
+	"player_table_3" : {
+		"host" : "Bessy",
+		"group" : "player",
+	},
+	"enemy_table_1" : {
+		"host" : "Boris",
+		"group" : "enemy",
+	},
+	"enemy_table_2" : {
+		"host" : "Madeline",
+		"group" : "enemy",
+	},
+	"enemy_table_3" : {
+		"host" : "Joanna",
+		"group" : "enemy",
+	},
+}

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxh20c0wjgbaa"]
+
+[ext_resource type="Theme" uid="uid://bywqqu0lkvhdn" path="res://game/ui/ccm_theme.tres" id="1_gdhhk"]
+[ext_resource type="Script" path="res://game/scripts/leaderboard_user.gd" id="2_wdtgy"]
+
+[node name="LeaderboardUser" type="HBoxContainer"]
+theme = ExtResource("1_gdhhk")
+script = ExtResource("2_wdtgy")
+
+[node name="UserCharacter" type="Button" parent="."]
+layout_mode = 2
+text = ">:)"
+
+[node name="UserName" type="Label" parent="."]
+layout_mode = 2
+text = "asdf"
+
+[node name="UserValue" type="Label" parent="."]
+layout_mode = 2
+text = "11000"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://du5133maqqqlj"]
+
+[ext_resource type="Script" path="res://game/scenes/dynamic_button.gd" id="1_6v7ar"]
+
+[node name="DynamicButton" type="Button"]
+text = "Some Button
+"
+script = ExtResource("1_6v7ar")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

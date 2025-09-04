@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt8k2i4fpnm0v"]
+
+[ext_resource type="Script" path="res://game/scripts/gameplay_map_buttons_container.gd" id="1_okk24"]
+
+[node name="GameplayMapButtonsContainer" type="HBoxContainer"]
+script = ExtResource("1_okk24")

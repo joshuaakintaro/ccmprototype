@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3q7ruhwrho2b"]
+
+[ext_resource type="PackedScene" uid="uid://x05f45yoekf1" path="res://game/scenes/special_button.tscn" id="1_6i6s0"]
+[ext_resource type="Script" path="res://game/scripts/special_button_container.gd" id="1_ubtpv"]
+
+[node name="SpecialButtonContainer" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ubtpv")
+
+[node name="SkillButton" parent="." instance=ExtResource("1_6i6s0")]
+layout_mode = 2
+
+[node name="AbilityButton" parent="." instance=ExtResource("1_6i6s0")]
+layout_mode = 2

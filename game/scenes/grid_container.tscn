@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvsygs4u2f1dg"]
+
+[ext_resource type="Script" path="res://game/scripts/grid_container.gd" id="1_yxedj"]
+[ext_resource type="PackedScene" uid="uid://bcq1svj13i4vd" path="res://game/scenes/customisation_item_button.tscn" id="2_1gqlk"]
+
+[node name="GridContainer" type="GridContainer"]
+offset_left = 276.0
+offset_top = 278.0
+offset_right = 316.0
+offset_bottom = 318.0
+script = ExtResource("1_yxedj")
+item_scene = ExtResource("2_1gqlk")

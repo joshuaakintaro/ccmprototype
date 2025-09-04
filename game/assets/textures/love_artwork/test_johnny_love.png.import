@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://csujawyou3nkl"
+path="res://.godot/imported/test_johnny_love.png-7d701a7d6d9cbbb81111965608e2840d.image"
+
+[deps]
+
+source_file="res://game/assets/textures/love_artwork/test_johnny_love.png"
+dest_files=["res://.godot/imported/test_johnny_love.png-7d701a7d6d9cbbb81111965608e2840d.image"]
+
+[params]
+

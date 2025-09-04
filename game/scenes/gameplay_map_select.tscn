@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1l4kr7fklkik"]
+
+[ext_resource type="Script" path="res://game/scripts/gameplay_map_select.gd" id="1_a6xfi"]
+[ext_resource type="PackedScene" uid="uid://dt8k2i4fpnm0v" path="res://game/scenes/gameplay_map_buttons_container.tscn" id="2_huojn"]
+[ext_resource type="PackedScene" uid="uid://g8noxpmyjebt" path="res://game/scenes/gameplay_map_button.tscn" id="3_wem4p"]
+
+[node name="GameplayMapSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a6xfi")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapPreview" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -222.0
+offset_right = 222.0
+offset_bottom = 291.0
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -20.0
+offset_right = 10.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameplayMapButtonsContainer" parent="VBoxContainer" instance=ExtResource("2_huojn")]
+layout_mode = 2
+gameplay_map_button_scene = ExtResource("3_wem4p")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "<--"
+metadata/_edit_use_anchors_ = true
+
+[node name="StartButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.689062
+anchor_top = 0.526389
+anchor_right = 0.751562
+anchor_bottom = 0.558333
+offset_right = 8.0
+offset_bottom = 8.0
+text = "START ==>"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

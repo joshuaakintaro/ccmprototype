@@ -1,0 +1,145 @@
+[gd_scene load_steps=8 format=3 uid="uid://e3hjv11fcp6w"]
+
+[ext_resource type="Script" path="res://game/scripts/level.gd" id="1_sakg6"]
+[ext_resource type="PackedScene" uid="uid://cjtp7fa262i8o" path="res://game/scene_managers/table_manager.tscn" id="2_os7ps"]
+[ext_resource type="PackedScene" uid="uid://d3q7ruhwrho2b" path="res://game/scenes/special_button_container.tscn" id="4_f3r05"]
+[ext_resource type="PackedScene" uid="uid://d2x3k5hc1fg5x" path="res://game/scene_managers/customer_manager.tscn" id="4_qfgva"]
+[ext_resource type="Script" path="res://game/scripts/player_money_label.gd" id="6_5hj7f"]
+[ext_resource type="PackedScene" uid="uid://dmey4n0durih7" path="res://game/scenes/progress_bar_containers.tscn" id="6_80kr5"]
+[ext_resource type="Script" path="res://game/scripts/round_timer_label.gd" id="7_1whgw"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_sakg6")
+
+[node name="CustomerManager" parent="." instance=ExtResource("4_qfgva")]
+
+[node name="TableManager" parent="." instance=ExtResource("2_os7ps")]
+
+[node name="RoundTimer" type="Timer" parent="."]
+
+[node name="CustomerSpawningTimer" type="Timer" parent="."]
+
+[node name="LevelUI" type="CanvasLayer" parent="."]
+
+[node name="EmployeeButtons" type="HBoxContainer" parent="LevelUI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -30.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="LevelUI/EmployeeButtons"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="LevelUI/EmployeeButtons/MarginContainer"]
+layout_mode = 2
+
+[node name="ProgressBarContainers" parent="LevelUI/EmployeeButtons/MarginContainer/HBoxContainer" instance=ExtResource("6_80kr5")]
+layout_mode = 2
+
+[node name="SpecialButtonContainer" parent="LevelUI/EmployeeButtons/MarginContainer/HBoxContainer" instance=ExtResource("4_f3r05")]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="LevelUI/EmployeeButtons"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="LevelUI/EmployeeButtons/MarginContainer2"]
+layout_mode = 2
+
+[node name="ProgressBarContainers" parent="LevelUI/EmployeeButtons/MarginContainer2/HBoxContainer" instance=ExtResource("6_80kr5")]
+layout_mode = 2
+
+[node name="SpecialButtonContainer" parent="LevelUI/EmployeeButtons/MarginContainer2/HBoxContainer" instance=ExtResource("4_f3r05")]
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="LevelUI/EmployeeButtons"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="LevelUI/EmployeeButtons/MarginContainer3"]
+layout_mode = 2
+
+[node name="ProgressBarContainers" parent="LevelUI/EmployeeButtons/MarginContainer3/HBoxContainer" instance=ExtResource("6_80kr5")]
+layout_mode = 2
+
+[node name="SpecialButtonContainer" parent="LevelUI/EmployeeButtons/MarginContainer3/HBoxContainer" instance=ExtResource("4_f3r05")]
+layout_mode = 2
+
+[node name="TopUI" type="HBoxContainer" parent="LevelUI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -496.0
+offset_right = 495.0
+offset_bottom = 128.0
+grow_horizontal = 2
+
+[node name="PlayerMoneyContainer" type="VBoxContainer" parent="LevelUI/TopUI"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="LevelUI/TopUI/PlayerMoneyContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="LevelUI/TopUI/PlayerMoneyContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="PlayerMoneyLabel" type="RichTextLabel" parent="LevelUI/TopUI/PlayerMoneyContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Player 1: $ 0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("6_5hj7f")
+
+[node name="RoundTimerContainer" type="CenterContainer" parent="LevelUI/TopUI"]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="RoundTimerLabel" type="RichTextLabel" parent="LevelUI/TopUI/RoundTimerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Time left: 0
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("7_1whgw")
+
+[node name="PlayerMoneyContainer2" type="VBoxContainer" parent="LevelUI/TopUI"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="LevelUI/TopUI/PlayerMoneyContainer2"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="LevelUI/TopUI/PlayerMoneyContainer2/PanelContainer"]
+layout_mode = 2
+
+[node name="PlayerMoneyLabel" type="RichTextLabel" parent="LevelUI/TopUI/PlayerMoneyContainer2/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Player 1: $ 0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("6_5hj7f")
+
+[node name="OptionsContainer" type="CenterContainer" parent="LevelUI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RoundTimer" to="." method="_on_round_timer_timeout"]
+[connection signal="timeout" from="CustomerSpawningTimer" to="." method="_on_customer_spawning_timer_timeout"]

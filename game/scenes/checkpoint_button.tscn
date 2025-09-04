@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bks7aenfee6gi"]
+
+[ext_resource type="Script" path="res://game/scripts/checkpoint_button.gd" id="1_ssmh4"]
+
+[node name="CheckpointButton" type="Button"]
+script = ExtResource("1_ssmh4")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

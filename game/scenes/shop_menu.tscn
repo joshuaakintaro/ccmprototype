@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://4085kf8030pm"]
+
+[ext_resource type="Theme" uid="uid://bywqqu0lkvhdn" path="res://game/ui/ccm_theme.tres" id="1_ertal"]
+[ext_resource type="Script" path="res://game/scripts/shop_menu_screen.gd" id="2_o7lnr"]
+
+[node name="ShopMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ertal")
+script = ExtResource("2_o7lnr")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 90.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NewButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "NEW"
+
+[node name="SaleButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "SALE
+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="BattlePassButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "BATTLE PASS"
+
+[node name="SearchButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "SEARCH
+"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/NewButton" to="." method="_on_new_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/SaleButton" to="." method="_on_sale_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/BattlePassButton" to="." method="_on_battle_pass_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/SearchButton" to="." method="_on_search_button_pressed"]

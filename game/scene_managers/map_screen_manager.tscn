@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwnc653hll1u0"]
+
+[ext_resource type="Script" path="res://game/scripts/map_screen_manager.gd" id="1_g53q3"]
+[ext_resource type="PackedScene" uid="uid://cxbqdjpybqqru" path="res://game/scenes/map_screen.tscn" id="2_wr8pd"]
+[ext_resource type="PackedScene" uid="uid://cm42apvc1qth3" path="res://game/scenes/chapter_menu.tscn" id="3_fqg7u"]
+
+[node name="MapScreenManager" type="Node2D"]
+script = ExtResource("1_g53q3")
+
+[node name="MapScreen" parent="." instance=ExtResource("2_wr8pd")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ChapterMenu" parent="CanvasLayer" instance=ExtResource("3_fqg7u")]
+visible = false

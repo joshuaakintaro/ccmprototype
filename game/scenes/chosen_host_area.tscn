@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtwcih4xaex3i"]
+
+[ext_resource type="Script" path="res://game/scripts/chosen_host_area.gd" id="1_xtnfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvxlr"]
+size = Vector2(25, 128)
+
+[node name="ChosenHostArea" type="Area2D"]
+script = ExtResource("1_xtnfk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gvxlr")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

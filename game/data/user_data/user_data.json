@@ -1,0 +1,222 @@
+[
+	{
+		"name": "ValeriaFan42",
+		"favorite_characters": ["Valeria", "Mia", "Alice"],
+		"elo": 1420,
+		"networth": 120000,
+		"progression": 0.68,
+		"matches": 215,
+		"match_wins": 134,
+		"total_earnings": 150500,
+		"classic_rating": 780
+	},
+	{
+		"name": "ChadVictory",
+		"favorite_characters": ["Mia", "Yoru", "Valeria"],
+		"elo": 1650,
+		"networth": 320000,
+		"progression": 0.91,
+		"matches": 412,
+		"match_wins": 278,
+		"total_earnings": 512300,
+		"classic_rating": 860
+	},
+	{
+		"name": "Strategist88",
+		"favorite_characters": ["Alice", "Gwen"],
+		"elo": 1300,
+		"networth": 78000,
+		"progression": 0.45,
+		"matches": 180,
+		"match_wins": 97,
+		"total_earnings": 92400,
+		"classic_rating": 695
+	},
+	{
+		"name": "Newbie999",
+		"favorite_characters": ["Yoru"],
+		"elo": 980,
+		"networth": 5000,
+		"progression": 0.12,
+		"matches": 34,
+		"match_wins": 9,
+		"total_earnings": 4350,
+		"classic_rating": 430
+	},
+	{
+		"name": "GwenMain",
+		"favorite_characters": ["Gwen", "Mia"],
+		"elo": 1240,
+		"networth": 64000,
+		"progression": 0.37,
+		"matches": 152,
+		"match_wins": 83,
+		"total_earnings": 78300,
+		"classic_rating": 670
+	},
+	{
+		"name": "ColdLogic",
+		"favorite_characters": ["Alice", "Valeria"],
+		"elo": 1500,
+		"networth": 110000,
+		"progression": 0.72,
+		"matches": 288,
+		"match_wins": 161,
+		"total_earnings": 206700,
+		"classic_rating": 810
+	},
+	{
+		"name": "MidnightRunner",
+		"favorite_characters": ["Yoru", "Gwen"],
+		"elo": 1380,
+		"networth": 95000,
+		"progression": 0.6,
+		"matches": 202,
+		"match_wins": 117,
+		"total_earnings": 118800,
+		"classic_rating": 755
+	},
+	{
+		"name": "PocketThreat",
+		"favorite_characters": ["Mia", "Valeria"],
+		"elo": 1580,
+		"networth": 180000,
+		"progression": 0.85,
+		"matches": 330,
+		"match_wins": 216,
+		"total_earnings": 362400,
+		"classic_rating": 840
+	},
+	{
+		"name": "RisingStar77",
+		"favorite_characters": ["Gwen", "Mia"],
+		"elo": 1190,
+		"networth": 54000,
+		"progression": 0.3,
+		"matches": 140,
+		"match_wins": 71,
+		"total_earnings": 63000,
+		"classic_rating": 645
+	},
+	{
+		"name": "TestSubject21",
+		"favorite_characters": ["Alice"],
+		"elo": 1080,
+		"networth": 23000,
+		"progression": 0.22,
+		"matches": 102,
+		"match_wins": 43,
+		"total_earnings": 24100,
+		"classic_rating": 520
+	},
+	{
+		"name": "TopDeckTony",
+		"favorite_characters": ["Valeria", "Gwen"],
+		"elo": 1720,
+		"networth": 390000,
+		"progression": 0.95,
+		"matches": 470,
+		"match_wins": 312,
+		"total_earnings": 584000,
+		"classic_rating": 885
+	},
+	{
+		"name": "IntrovertAI",
+		"favorite_characters": ["Alice", "Yoru", "Mia"],
+		"elo": 1350,
+		"networth": 82000,
+		"progression": 0.51,
+		"matches": 193,
+		"match_wins": 101,
+		"total_earnings": 102300,
+		"classic_rating": 700
+	},
+	{
+		"name": "RankClimber",
+		"favorite_characters": ["Valeria"],
+		"elo": 1600,
+		"networth": 210000,
+		"progression": 0.88,
+		"matches": 350,
+		"match_wins": 240,
+		"total_earnings": 400500,
+		"classic_rating": 870
+	},
+	{
+		"name": "StreetProphet",
+		"favorite_characters": ["Yoru", "Mia"],
+		"elo": 1430,
+		"networth": 100000,
+		"progression": 0.67,
+		"matches": 260,
+		"match_wins": 145,
+		"total_earnings": 158000,
+		"classic_rating": 790
+	},
+	{
+		"name": "QuickPlayJack",
+		"favorite_characters": ["Mia", "Gwen", "Alice"],
+		"elo": 1280,
+		"networth": 67000,
+		"progression": 0.42,
+		"matches": 175,
+		"match_wins": 88,
+		"total_earnings": 72000,
+		"classic_rating": 660
+	},
+	{
+		"name": "CasualKing",
+		"favorite_characters": ["Gwen"],
+		"elo": 1050,
+		"networth": 21000,
+		"progression": 0.19,
+		"matches": 70,
+		"match_wins": 22,
+		"total_earnings": 17800,
+		"classic_rating": 460
+	},
+	{
+		"name": "NoScopeNate",
+		"favorite_characters": ["Yoru", "Valeria"],
+		"elo": 1480,
+		"networth": 140000,
+		"progression": 0.73,
+		"matches": 300,
+		"match_wins": 187,
+		"total_earnings": 248000,
+		"classic_rating": 825
+	},
+	{
+		"name": "WildcardHex",
+		"favorite_characters": ["Mia"],
+		"elo": 1120,
+		"networth": 33000,
+		"progression": 0.28,
+		"matches": 96,
+		"match_wins": 44,
+		"total_earnings": 28600,
+		"classic_rating": 600
+	},
+	{
+		"name": "EndGameEcho",
+		"favorite_characters": ["Alice", "Gwen", "Valeria"],
+		"elo": 1530,
+		"networth": 160000,
+		"progression": 0.77,
+		"matches": 298,
+		"match_wins": 186,
+		"total_earnings": 272400,
+		"classic_rating": 835
+	},
+	{
+		"name": "F2PTitan",
+		"favorite_characters": ["Yoru", "Alice"],
+		"elo": 1220,
+		"networth": 48000,
+		"progression": 0.35,
+		"matches": 143,
+		"match_wins": 65,
+		"total_earnings": 52000,
+		"classic_rating": 640
+	}
+]

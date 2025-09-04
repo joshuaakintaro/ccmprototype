@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjtp7fa262i8o"]
+
+[ext_resource type="Script" path="res://table_manager.gd" id="1_wki2v"]
+[ext_resource type="PackedScene" uid="uid://dm8wyvcnc16im" path="res://table.tscn" id="2_5ye72"]
+[ext_resource type="PackedScene" uid="uid://b2k5b5twjdfwo" path="res://gameplay_host_manager.tscn" id="3_fiu33"]
+
+[node name="TableManager" type="Node2D"]
+script = ExtResource("1_wki2v")
+
+[node name="Table" parent="." instance=ExtResource("2_5ye72")]
+
+[node name="GameplayHostManager" parent="." instance=ExtResource("3_fiu33")]

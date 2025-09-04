@@ -1,0 +1,38 @@
+{
+	"skill" : {
+		"customer_affecting_skill_test" : {
+			"special_name" : "Customer Affect Skill",
+			"type" : "service",
+			"target" : "current_customer",
+			"effect_data" : {
+				"stat" : "patience",
+			},
+			"value" : 1.5,
+			"time" : 5,
+			"cooldown" : 10
+		},
+		"host_affecting_skill_test" : {
+			"special_name" : "Host Affect Skill",
+			"type" : "support",
+			"target" : "host_team",
+			"effect_data" : {
+				"big_stat" : "status",
+				"sub_stat" : "mood",
+			},
+			"value" : 1.2,
+			"time" : 10,
+			"cooldown" : 10,
+		},
+		"all_customer_affecting_skill_test" : {
+			"special_name" : "Customer Stream Affect Skill",
+			"type" : "service",
+			"target" : "customer_stream",
+			"effect_data" : {
+				"stat" : "spending_power"
+			},
+			"value" : 1.2,
+			"time" : 10,
+			"cooldown" : 15,
+		},
+	},
+}

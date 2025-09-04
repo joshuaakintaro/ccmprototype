@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqs18vnpbwwd2"]
+
+[ext_resource type="Script" path="res://game/scripts/classic_scenario_menu.gd" id="1_l5rpd"]
+[ext_resource type="PackedScene" uid="uid://5ahbmra2dmxf" path="res://game/scenes/classic_scenario_select.tscn" id="3_v6y0e"]
+[ext_resource type="PackedScene" uid="uid://b8ak1x8q7lccq" path="res://game/scenes/classic_scenario_details.tscn" id="4_0qeou"]
+
+[node name="ClassicScenarioMenu" type="Control"]
+layout_mode = 3
+anchor_top = 0.169444
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l5rpd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 800.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0015625
+anchor_right = 0.611719
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ClassicScenarioSelect" parent="HBoxContainer" instance=ExtResource("3_v6y0e")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ClassicScenarioDetails" parent="HBoxContainer" instance=ExtResource("4_0qeou")]
+visible = false
+layout_mode = 2

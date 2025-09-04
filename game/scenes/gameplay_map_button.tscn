@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://g8noxpmyjebt"]
+
+[ext_resource type="Script" path="res://game/scripts/gameplay_map_button.gd" id="1_y2nuu"]
+
+[node name="GameplayMapButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_y2nuu")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

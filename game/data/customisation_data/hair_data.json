@@ -1,0 +1,22 @@
+[
+	{
+		"0" : {
+			"id" : 0,
+			"name" : "New World Hair",
+			"color" : "COLOR",
+			"image_path" : "res/...",
+		},
+		"1" : {
+			"id" : 1,
+			"name" : "Old World Hair",
+			"color" : "COLOR",
+			"image_path" : "res/...",
+		},
+		"2" : {
+			"id" : 2,
+			"name" : "Cool World Hair",
+			"color" : "COLOR",
+			"image_path" : "res/...",
+		},
+	}
+]

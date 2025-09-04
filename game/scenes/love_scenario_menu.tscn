@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://s67qcep7bxrq"]
+
+[ext_resource type="Script" path="res://game/scripts/love_scenario_menu.gd" id="1_rbvnl"]
+[ext_resource type="PackedScene" uid="uid://btg0fyk3s26pb" path="res://game/scenes/love_scenario_select.tscn" id="2_vycoy"]
+[ext_resource type="PackedScene" uid="uid://36q607a7npv5" path="res://game/scenes/love_scenario_details.tscn" id="3_wbd3q"]
+
+[node name="LoveScenarioMenu" type="Control"]
+layout_mode = 3
+anchor_top = 0.169444
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbvnl")
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0015625
+anchor_right = 0.611719
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="LoveScenarioSelect" parent="HBoxContainer" instance=ExtResource("2_vycoy")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LoveScenarioDetails" parent="HBoxContainer" instance=ExtResource("3_wbd3q")]
+visible = false
+layout_mode = 2

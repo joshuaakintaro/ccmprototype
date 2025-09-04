@@ -1,0 +1,55 @@
+[
+	{
+		"commands": {
+			"change_background": {
+				"background": "test_map.png",
+				"transition": "fade-in"
+			}
+		}
+	},
+	{
+		"commands" : {
+			"new_sprite" : [
+				{
+				"character" : "testface",
+				"expression" : "neutral"
+				},
+			]
+		}
+	},
+	{
+		"dialogue": {
+			"speaker": "Console",
+			"line": "This is dialogue from the Console."
+		}
+	},
+	{
+		"dialogue": {
+			"speaker": "testface",
+			"line": "This a dialogue from Testface. It is also a line of dialogue that doubles as a test for what happens if you let it extend. Not only is it annoying for use in our desired JSON format, but also it most likely runs off the screen so that the player can't see it. Instead of trying to remedy this though, a good solution would be to just make sure it can never happen by manually keeping things uniform."
+		}
+	},
+	{
+		"dialogue": {
+			"speaker": "testface",
+			"line": "Let's test some effects.",
+		}
+	},
+	{
+		"dialogue": {
+			"speaker": "Console",
+			"line": "Pause. Flash.",
+			"effects": {
+				"pause_at": [5],
+				"flash_at" : [7],
+			}
+		}
+	},
+	{
+		"commands" : {
+			"change_scene" : {
+				"scene" : "res://game/scenes/level.tscn"
+			}
+		}
+	}
+]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcq1svj13i4vd"]
+
+[ext_resource type="Script" path="res://game/scripts/customisation_button.gd" id="1_f2jnj"]
+
+[node name="CustomisationItemButton" type="TextureButton"]
+script = ExtResource("1_f2jnj")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

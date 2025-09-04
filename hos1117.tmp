@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://1n5fcg6pg7jq"]
+
+[ext_resource type="Script" path="res://hostmanager.gd" id="1_wg5da"]
+
+[node name="Host" type="Node2D"]
+script = ExtResource("1_wg5da")

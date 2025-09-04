@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dj11s3w3yi18a"
+path="res://.godot/imported/test_madeline.png-b817edf7d8f2898da919b07312422e57.image"
+
+[deps]
+
+source_file="res://game/assets/textures/club_selects/test_madeline.png"
+dest_files=["res://.godot/imported/test_madeline.png-b817edf7d8f2898da919b07312422e57.image"]
+
+[params]
+

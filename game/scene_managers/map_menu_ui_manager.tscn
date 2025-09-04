@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://benwj2em5m2vf"]
+
+[ext_resource type="Script" path="res://game/scripts/map_menu_ui_manager.gd" id="1_djwux"]
+[ext_resource type="Script" path="res://game/scripts/chapter_menu.gd" id="2_67ie0"]
+
+[node name="MapMenuUIManager" type="CanvasLayer"]
+script = ExtResource("1_djwux")
+
+[node name="MapBackground" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChapterMenu" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_67ie0")
+
+[node name="ChapterName" type="RichTextLabel" parent="ChapterMenu"]
+layout_mode = 2
+
+[node name="ChapterSummary" type="RichTextLabel" parent="ChapterMenu"]
+layout_mode = 2
+
+[node name="ChapterArt" type="TextureRect" parent="ChapterMenu"]
+layout_mode = 2
+
+[node name="ChapterMenuStartButton" type="Button" parent="ChapterMenu"]
+layout_mode = 2
+text = "START"
+
+[node name="BackButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="ChapterMenu/ChapterMenuStartButton" to="." method="_on_chapter_menu_start_button_pressed"]

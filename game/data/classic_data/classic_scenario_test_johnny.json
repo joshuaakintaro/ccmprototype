@@ -1,0 +1,30 @@
+[
+	{
+	"id" : 0,
+	"scenario_id" : "scenario_j01",
+	"name" : "Johnny 01",
+	"completion" : 0,
+	"unlocked" : true,
+	"details" : {
+		"number" : "01",
+		"name" :"Something's Up...",
+		"summary" : "There's a thingy going on...Find out!",
+		"objectives" : "Objective 1",
+		"scene" : "visual_novel_ui_manager.tscn",
+		}
+	},
+	{
+	"id" : 1,
+	"scenario_id" : "scenario_j02",
+	"name" : "Johnny 02",
+	"unlocked" : false,
+	"completion" : 0,
+	"details" : {
+		"number" : "02",
+		"name" : "Another Thing Happens...!",
+		"summary" : "Another thing gets to happen again...weird...",
+		"objectives" : "Objective 1",
+		"scene" : "visual_novel_ui_manager.tscn"
+		}
+	}
+]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3vg745inrwag"]
+
+[ext_resource type="Script" path="res://game/scripts/classic_club_select_button.gd" id="1_e53pv"]
+
+[node name="ClassicClubSelectButton" type="Button"]
+anchors_preset = -1
+anchor_right = 0.576563
+anchor_bottom = 1.36667
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e53pv")
+metadata/_edit_use_anchors_ = true

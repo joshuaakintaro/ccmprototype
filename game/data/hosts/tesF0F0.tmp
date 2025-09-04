@@ -1,0 +1,69 @@
+[
+	{
+		"name": "Johnny",
+		"appearance": {
+			"allure": 10,
+			"cuteness": 10,
+			"elegance": 10,
+			"striking": 10,
+		},
+		"max_stamina": 10,
+		"max_mood": 10,
+		"performance" : {
+			"charm": 10,
+			"empathy": 10,
+			"physical_resilience": 10,
+			"emotional_resilience": 10,
+			"luck": 10,
+		},
+		"special" : {
+			"skill_id": "host_affecting_skill_test",
+			"ability_id": "host_affecting_ability_test",
+			"trait_id": "host_affecting_trait_test"
+		},
+	},
+	{
+		"name": "Cass",
+		"appearance": {
+			"allure": 20,
+			"cuteness": 0,
+			"elegance": 15,
+			"striking": 20,
+		},
+		"max_stamina": 20,
+		"max_mood": 5,
+		"performance" : {
+			"charm": 20,
+			"empathy": 15,
+			"physical_resilience": 5,
+			"emotional_resilience": 4,
+			"luck": 1,
+		},
+		"special" : {
+			"skill_id": "customer_affecting_skill_test",
+			"ability_id": "customer_affecting_ability_test",
+			"trait_id": "customer_affecting_trait_test"
+		},
+	},
+		"name" : "Bessy",
+		"appearance": {
+			"allure" : 5,
+			"cuteness" : 10,
+			"elegance" : 20,
+			"striking" : 5,
+		},
+		"max_stamina" : 10,
+		"max_mood" : 20,
+		"performance" : {
+			"charm": 0,
+			"empathy": 5,
+			"physical_resilience": 10,
+			"emotional_resilience": 5,
+			"luck": 10,
+		}
+		"special" : {
+			"skill_id": "all_customer_affecting_skill_test",
+			"ability_id": "all_customer_affecting_ability_test",
+			"trait_id": "all_customer_affecting_trait_test"
+		},
+]

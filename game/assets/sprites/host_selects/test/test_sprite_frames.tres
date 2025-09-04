@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://hv2dqa6a46el"]
+
+[ext_resource type="Texture2D" uid="uid://dreca72di6vxi" path="res://game/assets/sprites/godot_prototype_assets_by_kpids/classic/tiles/logo.png" id="1_q56lr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q56lr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

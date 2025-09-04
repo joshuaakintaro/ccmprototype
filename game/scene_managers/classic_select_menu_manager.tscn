@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://75w15y3h1kho"]
+
+[ext_resource type="Theme" uid="uid://bywqqu0lkvhdn" path="res://game/ui/ccm_theme.tres" id="1_re0cv"]
+[ext_resource type="Script" path="res://game/scripts/classic_select_menu_manager.gd" id="2_xofwn"]
+[ext_resource type="PackedScene" uid="uid://75fuedn3jqg1" path="res://game/scenes/classic_club_select_menu.tscn" id="3_oumtl"]
+[ext_resource type="PackedScene" uid="uid://dqs18vnpbwwd2" path="res://game/scenes/classic_scenario_menu.tscn" id="4_se0vn"]
+
+[node name="ClassicSelectMenuManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_re0cv")
+script = ExtResource("2_xofwn")
+
+[node name="ClassicClubSelectMenu" parent="." instance=ExtResource("3_oumtl")]
+layout_mode = 1
+
+[node name="ClassicScenarioMenu" parent="." instance=ExtResource("4_se0vn")]
+visible = false
+layout_mode = 1
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "<---"

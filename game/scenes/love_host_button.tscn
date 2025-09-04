@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp3rqfwrcdgvp"]
+
+[ext_resource type="Script" path="res://game/scripts/love_host_button.gd" id="1_5cbe8"]
+
+[node name="LoveHostButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "HOST NAME"
+script = ExtResource("1_5cbe8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

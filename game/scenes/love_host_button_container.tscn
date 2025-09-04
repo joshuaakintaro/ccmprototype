@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://by03f54d447s5"]
+
+[ext_resource type="Script" path="res://game/scripts/love_host_button_container.gd" id="1_vc2wn"]
+[ext_resource type="PackedScene" uid="uid://bp3rqfwrcdgvp" path="res://game/scenes/love_host_button.tscn" id="2_t8pl5"]
+
+[node name="LoveHostButtonContainer" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+script = ExtResource("1_vc2wn")
+love_host_button_scene = ExtResource("2_t8pl5")

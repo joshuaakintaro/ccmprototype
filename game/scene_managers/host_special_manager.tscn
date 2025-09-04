@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://cehplmqmugjbp"]
+
+[ext_resource type="Script" path="res://game/scripts/host_special_manager.gd" id="1_bbkn5"]
+[ext_resource type="PackedScene" uid="uid://x05f45yoekf1" path="res://game/scenes/special_button.tscn" id="2_463h2"]
+
+[node name="HostSpecialManager" type="Node2D"]
+script = ExtResource("1_bbkn5")
+special_button_instance = ExtResource("2_463h2")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpecialButton" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="SpecialButton2" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="SpecialButton3" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="SpecialButton4" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="SpecialButton5" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="SpecialButton6" parent="Control" instance=ExtResource("2_463h2")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0

@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dd1o7dwkmlirk"
+path="res://.godot/imported/test_chapter_artwork.png-062c414a8ca9f9a42c4a65cf7ce22fe4.image"
+
+[deps]
+
+source_file="res://game/assets/textures/chapters/test_chapter_artwork.png"
+dest_files=["res://.godot/imported/test_chapter_artwork.png-062c414a8ca9f9a42c4a65cf7ce22fe4.image"]
+
+[params]
+

@@ -1,0 +1,7 @@
+[
+	{
+		"position" : [500,500],
+		"sprite_frames" : "test_poi_sprite.png",
+		"chapter" : "test_chapter"
+	},
+]

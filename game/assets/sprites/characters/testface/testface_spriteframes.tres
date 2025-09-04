@@ -1,0 +1,55 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://c3c8rfr6jrntl"]
+
+[ext_resource type="Texture2D" uid="uid://dx1ov2xc87xsq" path="res://game/assets/sprites/characters/testface/neutral/default/default_0.PNG" id="1_ycl3d"]
+[ext_resource type="Texture2D" uid="uid://boim5imxboney" path="res://game/assets/sprites/characters/testface/neutral/default/default_1.PNG" id="2_c0nd2"]
+[ext_resource type="Texture2D" uid="uid://dvfp2de7r6u10" path="res://game/assets/sprites/characters/testface/neutral/default/default_2.PNG" id="3_36vnv"]
+[ext_resource type="Texture2D" uid="uid://l4x7y6lrgkd" path="res://game/assets/sprites/characters/testface/neutral/default/default_3.PNG" id="4_ebega"]
+[ext_resource type="Texture2D" uid="uid://dgx8pd2pm1ptu" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_0.PNG" id="5_ahiw3"]
+[ext_resource type="Texture2D" uid="uid://v5nlotowav8b" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_1.PNG" id="6_ujxtj"]
+[ext_resource type="Texture2D" uid="uid://c3jxn0itdgluh" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_2.PNG" id="7_v40l8"]
+[ext_resource type="Texture2D" uid="uid://cdvlnmwhydtl" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_3.PNG" id="8_j1gl5"]
+[ext_resource type="Texture2D" uid="uid://coeb82mfl2ltw" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_4.PNG" id="9_d7c7b"]
+[ext_resource type="Texture2D" uid="uid://dk8wsrmg4b580" path="res://game/assets/sprites/characters/testface/neutral/talking/talking_5.PNG" id="10_vy1w6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ycl3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_c0nd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_36vnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ebega")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ahiw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ujxtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v40l8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j1gl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_d7c7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vy1w6")
+}],
+"loop": true,
+"name": &"neutral_talking",
+"speed": 5.0
+}]

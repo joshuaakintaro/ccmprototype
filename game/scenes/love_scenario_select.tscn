@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://btg0fyk3s26pb"]
+
+[ext_resource type="PackedScene" uid="uid://5ahbmra2dmxf" path="res://game/scenes/classic_scenario_select.tscn" id="1_anvg6"]
+[ext_resource type="Script" path="res://game/scripts/love_scenario_select.gd" id="2_6hgkq"]
+[ext_resource type="PackedScene" uid="uid://b3q2ue7omdq5j" path="res://game/scenes/love_scenario_button.tscn" id="3_yp2qo"]
+
+[node name="LoveScenarioSelect" instance=ExtResource("1_anvg6")]
+script = ExtResource("2_6hgkq")
+love_scenario_button_scene = ExtResource("3_yp2qo")

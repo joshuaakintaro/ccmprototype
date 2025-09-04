@@ -1,0 +1,30 @@
+[
+	{
+	"id" : 0,
+	"scenario_id" : "love_j01",
+	"name" : "Johnny 01",
+	"completion" : 0,
+	"unlocked" : true,
+	"details" : {
+		"number" : "01",
+		"name" :"HeartThrob",
+		"summary" : "Hearts...Beating!",
+		"objectives" : "Objective 1",
+		"scene" : "visual_novel_ui_manager.tscn",
+		},
+	},
+	{
+	"id" : 1,
+	"scenario_id" : "love_j02",
+	"name" : "Johnny 02",
+	"completion" : 0,
+	"unlocked" : true,
+	"details" : {
+		"number" : "02",
+		"name" : "Love Is In The Air",
+		"summary" : "And Johnny just doesn't care!",
+		"objectives" : "Objective 1",
+		"scene" : "visual_novel_ui_manager.tscn"
+		},
+	}
+]

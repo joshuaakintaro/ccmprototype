@@ -1,0 +1,68 @@
+{
+	"types" : {
+		"Blue-Collar Worker" : {
+			"preference" : "cuteness",
+			"stats" : {
+				"physical_demand" : {
+					"range" : [50,100],
+				},
+				"emotional_demand" : {
+					"range" : [50,100]
+				},
+				"happiness" : {
+					"range" : [70,80],
+				},
+				"reputation" : {
+					"range" : [25,40],
+				},
+				"patience" : {
+					"range" : [70,80],
+				},
+				"order_duration" : {
+					"range" : [3,5],
+				},
+				"spending" : {
+					"range" : [100,500],
+				},
+				"spending_frequency" : {
+					"range" : [0.5,1],
+				},
+				"troublemaking" : {
+					"range" : [10,20],
+				},
+			},
+		},
+		"Elite" : {
+			"preferences" : "elegance",
+			"stats" : {
+				"physical_demand" : {
+					"range" : [200,300],
+				},
+				"emotional_demand" : {
+					"range" : [250,350]
+				},
+				"happiness" : {
+					"range" : [30,49],
+				},
+				"reputation" : {
+					"range" : [-50,-25],
+				},
+				"patience" : {
+					"range" : [30,49],
+				},
+				"order_duration" : {
+					"range" : [5,10],
+				},
+				"spending_power" : {
+					"range" : [2000,4000],
+				},
+				"spending_frequency" : {
+					"range" : [1,1.5],
+				},
+				"troublemaking" : {
+					"range" : [30,40],
+				},
+			},
+		},
+	},
+}

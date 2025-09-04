@@ -1,0 +1,77 @@
+[gd_scene load_steps=16 format=3 uid="uid://d2x3k5hc1fg5x"]
+
+[ext_resource type="Script" path="res://game/scripts/customer_manager.gd" id="1_20onh"]
+[ext_resource type="PackedScene" uid="uid://bw8itpma4anm7" path="res://game/scenes/customer.tscn" id="2_8j8xm"]
+[ext_resource type="Script" path="res://game/scripts/customer_area.gd" id="3_g4lfw"]
+[ext_resource type="PackedScene" uid="uid://6mp2hdq2ul1p" path="res://game/scenes/customer_spawn_area.tscn" id="3_w2puh"]
+[ext_resource type="PackedScene" uid="uid://cf15hg8fnri4j" path="res://game/scenes/customer_placeholder.tscn" id="4_2qiks"]
+[ext_resource type="Script" path="res://game/scripts/customer_bar.gd" id="4_xwyen"]
+[ext_resource type="Script" path="res://game/scripts/customer_wall1.gd" id="5_ovg7s"]
+[ext_resource type="Script" path="res://game/scripts/customer_wall_2.gd" id="6_k8og8"]
+[ext_resource type="Script" path="res://game/scripts/customer_top.gd" id="9_iw2jv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1p12w"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fuwp4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lbtt"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_073vj"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_kqkgt"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_84k24"]
+
+[node name="CustomerManager" type="Node2D"]
+script = ExtResource("1_20onh")
+customer_instance = ExtResource("2_8j8xm")
+customer_spawn_area_instance = ExtResource("3_w2puh")
+customer_placeholder_instance = ExtResource("4_2qiks")
+extra_height = 500
+
+[node name="CustomerArea" type="Area2D" parent="."]
+collision_mask = 3
+input_pickable = false
+script = ExtResource("3_g4lfw")
+position_width_percentage = 0.5
+position_height_percentage = 0.5
+size_width_percentage = 0.3
+size_height_percentage = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CustomerArea"]
+shape = SubResource("RectangleShape2D_1p12w")
+debug_color = Color(0.476827, 0.509239, 0.784448, 0.42)
+
+[node name="CustomerGate" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_fuwp4")
+script = ExtResource("4_xwyen")
+speed = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CustomerGate"]
+shape = SubResource("RectangleShape2D_7lbtt")
+debug_color = Color(0.665969, 0.505078, 0.228743, 0.42)
+
+[node name="CustomerWall1" type="StaticBody2D" parent="."]
+script = ExtResource("5_ovg7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CustomerWall1"]
+shape = SubResource("SegmentShape2D_073vj")
+debug_color = Color(0.80526, 0.416262, 0, 0.42)
+
+[node name="CustomerWall2" type="StaticBody2D" parent="."]
+script = ExtResource("6_k8og8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CustomerWall2"]
+shape = SubResource("SegmentShape2D_kqkgt")
+debug_color = Color(0.80526, 0.416262, 0, 0.42)
+
+[node name="CustomerTop" type="StaticBody2D" parent="."]
+script = ExtResource("9_iw2jv")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CustomerTop"]
+shape = SubResource("SegmentShape2D_84k24")
+debug_color = Color(0.751499, 0.458221, 0.0290741, 0.42)
+
+[connection signal="body_entered" from="CustomerArea" to="CustomerArea" method="_on_body_entered"]
+[connection signal="body_exited" from="CustomerArea" to="CustomerArea" method="_on_body_exited"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://crn6w43a2caqd"]
+
+[ext_resource type="SpriteFrames" uid="uid://8gis2aaf2wx2" path="res://game/assets/sprites/pois/test_pois/new_sprite_frames.tres" id="1_uirr2"]
+[ext_resource type="Script" path="res://game/scripts/point_of_interest.gd" id="2_1o5xa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j305s"]
+
+[node name="PointOfInterest" type="AnimatedSprite2D"]
+position = Vector2(800, 352)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("1_uirr2")
+script = ExtResource("2_1o5xa")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 1
+monitoring = false
+monitorable = false
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_j305s")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

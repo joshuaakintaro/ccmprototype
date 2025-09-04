@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://8tc0r10nywar"]
+
+[ext_resource type="Script" path="res://game/scripts/map_menu.gd" id="1_jtd5c"]
+[ext_resource type="PackedScene" uid="uid://benwj2em5m2vf" path="res://game/scene_managers/map_menu_ui_manager.tscn" id="1_tv6jg"]
+[ext_resource type="PackedScene" uid="uid://borehd4hmkgxk" path="res://game/scenes/chapter_point.tscn" id="2_ds2hu"]
+
+[node name="MapMenu" type="Node2D"]
+script = ExtResource("1_jtd5c")
+
+[node name="ChapterPoint" parent="." instance=ExtResource("2_ds2hu")]
+
+[node name="Map" type="AnimatedSprite2D" parent="."]
+
+[node name="MapMenuUIManager" parent="." instance=ExtResource("1_tv6jg")]

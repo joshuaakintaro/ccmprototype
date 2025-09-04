@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://e3hjv11fcp6w"]
+
+[ext_resource type="Script" path="res://game/scripts/level.gd" id="1_7asa0"]
+[ext_resource type="PackedScene" uid="uid://d2x3k5hc1fg5x" path="res://game/scene_managers/customer_manager.tscn" id="2_lhqhp"]
+[ext_resource type="PackedScene" uid="uid://cjtp7fa262i8o" path="res://game/scene_managers/table_manager.tscn" id="3_stdvu"]
+[ext_resource type="PackedScene" uid="uid://omki3ckq003y" path="res://game/scene_managers/level_ui_manager.tscn" id="4_t7gfe"]
+
+[node name="LevelManager" type="Node2D"]
+script = ExtResource("1_7asa0")
+
+[node name="CustomerManager" parent="." instance=ExtResource("2_lhqhp")]
+
+[node name="TableManager" parent="." instance=ExtResource("3_stdvu")]
+
+[node name="RoundTimer" type="Timer" parent="."]
+
+[node name="CustomerSpawningTimer" type="Timer" parent="."]
+
+[node name="LevelUIManager" parent="." instance=ExtResource("4_t7gfe")]
+
+[connection signal="timeout" from="RoundTimer" to="." method="_on_round_timer_timeout"]
+[connection signal="timeout" from="CustomerSpawningTimer" to="." method="_on_customer_spawning_timer_timeout"]

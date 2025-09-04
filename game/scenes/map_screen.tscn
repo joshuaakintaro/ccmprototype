@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxbqdjpybqqru"]
+
+[ext_resource type="Script" path="res://game/scripts/map_screen.gd" id="1_2t0l5"]
+[ext_resource type="Texture2D" uid="uid://b8ta1mb7oa362" path="res://game/assets/textures/overworld/test_map_texture.png" id="1_pb4uh"]
+[ext_resource type="PackedScene" uid="uid://crn6w43a2caqd" path="res://game/scenes/point_of_interest.tscn" id="2_tadf3"]
+
+[node name="MapScreen" type="Node2D"]
+script = ExtResource("1_2t0l5")
+poi_scene = ExtResource("2_tadf3")
+
+[node name="MapTexture" type="TextureRect" parent="."]
+z_index = -1
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_pb4uh")

@@ -1,0 +1,14 @@
+[
+	{
+		"skills" : {
+			"customer_skill_test" : {
+				"name" : "Customer Skill Test",
+				"description" : "Test for skills that can affect customers",
+			},
+			"host_skill_test" : {
+				"name" : "Host Skill Test",
+				"description" : "Test for skills that can affect hosts",
+			},
+		},
+	},
+]

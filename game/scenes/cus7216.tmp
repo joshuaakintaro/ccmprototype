@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://bw8itpma4anm7"]
+
+[ext_resource type="Script" path="res://game/scripts/customer.gd" id="1_ryhmp"]
+[ext_resource type="Texture2D" uid="uid://dreca72di6vxi" path="res://game/assets/sprites/godot_prototype_assets_by_kpids/classic/tiles/logo.png" id="2_27107"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_latdm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvlui"]
+radius = 51.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fsmgj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_27107")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Customer" type="RigidBody2D"]
+position = Vector2(215, 86)
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_latdm")
+gravity_scale = 0.0
+continuous_cd = 1
+script = ExtResource("1_ryhmp")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jvlui")
+metadata/_edit_group_ = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fsmgj")
+metadata/_edit_group_ = true
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

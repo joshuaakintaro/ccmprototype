@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3 uid="uid://ce38dfiscd72l"]
+
+[ext_resource type="Script" path="res://game/scripts/menu_screen_manager.gd" id="1_ykcei"]
+[ext_resource type="PackedScene" uid="uid://dabhus5dqe8we" path="res://game/scenes/main_menu.tscn" id="2_r5ktl"]
+[ext_resource type="PackedScene" uid="uid://bwnc653hll1u0" path="res://game/scene_managers/map_screen_manager.tscn" id="3_i0tnb"]
+[ext_resource type="PackedScene" uid="uid://b2h3l3yvsfhvn" path="res://game/scenes/cabaret_club_mode_menu.tscn" id="3_x7fym"]
+[ext_resource type="PackedScene" uid="uid://0jvgpkkn3sb4" path="res://game/scenes/online_mode_menu.tscn" id="4_7efwh"]
+[ext_resource type="PackedScene" uid="uid://1uyqjewqb2ry" path="res://game/scenes/leaderboards_menu.tscn" id="5_tc1kg"]
+[ext_resource type="PackedScene" uid="uid://b4a2jw5epvnov" path="res://game/scene_managers/player_match_menu.tscn" id="7_5vka2"]
+
+[node name="MenuManager" type="Node"]
+script = ExtResource("1_ykcei")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_r5ktl")]
+
+[node name="MapScreenManager" parent="." instance=ExtResource("3_i0tnb")]
+visible = false
+
+[node name="CabaretClubModeMenu" parent="." instance=ExtResource("3_x7fym")]
+visible = false
+
+[node name="OnlineModeMenu" parent="." instance=ExtResource("4_7efwh")]
+visible = false
+
+[node name="LeaderboardsMenu" parent="." instance=ExtResource("5_tc1kg")]
+visible = false
+
+[node name="PlayerMatchMenu" parent="." instance=ExtResource("7_5vka2")]
+visible = false

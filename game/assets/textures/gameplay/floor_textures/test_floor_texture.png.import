@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c2w1uryv7365d"
+path="res://.godot/imported/test_floor_texture.png-658b2b0ee6765e0c872a576ab00b54d7.image"
+
+[deps]
+
+source_file="res://game/assets/textures/gameplay/floor_textures/test_floor_texture.png"
+dest_files=["res://.godot/imported/test_floor_texture.png-658b2b0ee6765e0c872a576ab00b54d7.image"]
+
+[params]
+

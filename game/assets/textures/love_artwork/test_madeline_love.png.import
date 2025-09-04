@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://bdpfa6g2qolj4"
+path="res://.godot/imported/test_madeline_love.png-e867540ba8490c98f76398fe5d895b5b.image"
+
+[deps]
+
+source_file="res://game/assets/textures/love_artwork/test_madeline_love.png"
+dest_files=["res://.godot/imported/test_madeline_love.png-e867540ba8490c98f76398fe5d895b5b.image"]
+
+[params]
+

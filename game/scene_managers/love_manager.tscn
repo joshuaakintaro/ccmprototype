@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://j26kmhrkkcbo"]
+
+[ext_resource type="Script" path="res://game/scripts/love_manager.gd" id="1_5c3uh"]
+[ext_resource type="PackedScene" uid="uid://by03f54d447s5" path="res://game/scenes/love_host_button_container.tscn" id="2_sd736"]
+[ext_resource type="PackedScene" uid="uid://s67qcep7bxrq" path="res://game/scenes/love_scenario_menu.tscn" id="3_w8s5d"]
+
+[node name="LoveManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5c3uh")
+
+[node name="LoveHostButtonContainer" parent="." instance=ExtResource("2_sd736")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 640.0
+offset_bottom = 720.0
+size_flags_horizontal = 3
+
+[node name="CharacterArt" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 640.0
+offset_right = 1280.0
+offset_bottom = 720.0
+size_flags_horizontal = 3
+
+[node name="LoveScenarioMenu" parent="." instance=ExtResource("3_w8s5d")]
+layout_mode = 1
+
+[node name="NextButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.903125
+anchor_top = 0.909722
+anchor_right = 0.99375
+anchor_bottom = 0.988889
+offset_right = 8.0
+offset_bottom = 8.0
+text = "NEXT ->"
+metadata/_edit_use_anchors_ = true
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,90 @@
+[gd_scene load_steps=5 format=3 uid="uid://omki3ckq003y"]
+
+[ext_resource type="Script" path="res://game/scripts/level_ui_manager.gd" id="1_eckp5"]
+[ext_resource type="PackedScene" uid="uid://uvdtrjh4tudd" path="res://game/scenes/host_status_panel.tscn" id="2_1nb7b"]
+[ext_resource type="PackedScene" uid="uid://c8gtxtvnh6ynx" path="res://game/scenes/money_container.tscn" id="4_8abk7"]
+[ext_resource type="Script" path="res://game/scripts/round_timer_label.gd" id="4_j128i"]
+
+[node name="LevelUIManager" type="CanvasLayer"]
+script = ExtResource("1_eckp5")
+
+[node name="MapRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HostStatusBox" type="HBoxContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -419.0
+offset_top = -273.0
+grow_horizontal = 0
+grow_vertical = 0
+metadata/_edit_group_ = true
+
+[node name="HostStatusPanel" parent="HostStatusBox" instance=ExtResource("2_1nb7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HostStatusPanel2" parent="HostStatusBox" instance=ExtResource("2_1nb7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HostStatusPanel3" parent="HostStatusBox" instance=ExtResource("2_1nb7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TopUI" type="HBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -495.0
+offset_right = 496.0
+offset_bottom = 64.0
+grow_horizontal = 2
+
+[node name="MoneyContainer" parent="TopUI" instance=ExtResource("4_8abk7")]
+layout_mode = 2
+
+[node name="RoundTimerContainer" type="CenterContainer" parent="TopUI"]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="RoundTimerLabel" type="RichTextLabel" parent="TopUI/RoundTimerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Time left: 0
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("4_j128i")
+
+[node name="MoneyContainer2" parent="TopUI" instance=ExtResource("4_8abk7")]
+layout_mode = 2
+
+[node name="OptionsContainer" type="CenterContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="HostStatusPanel" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HostStatus" type="VBoxContainer" parent="HostStatusPanel"]
+layout_mode = 2
+
+[node name="HostStatus2" type="VBoxContainer" parent="HostStatusPanel"]
+layout_mode = 2
+
+[node name="HostStatus3" type="VBoxContainer" parent="HostStatusPanel"]
+layout_mode = 2

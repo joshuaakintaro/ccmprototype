@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://8gis2aaf2wx2"]
+
+[ext_resource type="Texture2D" uid="uid://bkiqt6ax2c7vt" path="res://game/assets/sprites/pois/test_pois/test_poi_sprite.png" id="1_w5a2w"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w5a2w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

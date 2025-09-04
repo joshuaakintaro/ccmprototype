@@ -1,0 +1,18 @@
+{
+	"allure" : {
+		"ideal" : 10,
+		"max" : 20,
+	},
+	"cuteness" : {
+		"ideal" : 15,
+		"max" : 25,
+	},
+	"elegance" : {
+		"ideal" : 15,
+		"max" : 25,
+	},
+	"striking" : {
+		"ideal" : 15,
+		"max" : 25,
+	},
+}

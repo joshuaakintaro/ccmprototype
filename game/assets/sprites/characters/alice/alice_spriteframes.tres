@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://dfthcbo4gntrg"]
+
+[ext_resource type="Texture2D" uid="uid://b7n425pyed4dn" path="res://game/assets/sprites/characters/alice/alice_spreadsheet.png" id="1_3fmmk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jt3hn"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(3072, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkql7"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(3584, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p10me"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(4096, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apvj8"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u5a3"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3lao"]
+atlas = ExtResource("1_3fmmk")
+region = Rect2(1024, 0, 512, 512)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt3hn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkql7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p10me")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apvj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1u5a3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3lao")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}]

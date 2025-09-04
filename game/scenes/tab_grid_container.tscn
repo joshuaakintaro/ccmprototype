@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://crl5v3brj13cn"]
+
+[ext_resource type="Script" path="res://game/scripts/tab_grid_container.gd" id="1_rsjmf"]
+[ext_resource type="PackedScene" uid="uid://dvsygs4u2f1dg" path="res://game/scenes/grid_container.tscn" id="2_4ikf8"]
+
+[node name="TabGridContainer" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rsjmf")
+item_scene = ExtResource("2_4ikf8")

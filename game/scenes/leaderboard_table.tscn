@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7xonh74qh6sd"]
+
+[ext_resource type="Script" path="res://game/scripts/leaderboard_table.gd" id="1_7byx3"]
+[ext_resource type="PackedScene" uid="uid://dxh20c0wjgbaa" path="res://game/scenes/leaderboard_user.tscn" id="2_crdy1"]
+
+[node name="LeaderboardTable" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7byx3")
+
+[node name="LeaderboardUser" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser2" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser3" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser4" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser5" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser6" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser7" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser8" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser9" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2
+
+[node name="LeaderboardUser10" parent="." instance=ExtResource("2_crdy1")]
+layout_mode = 2

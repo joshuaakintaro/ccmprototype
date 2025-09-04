@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://75fuedn3jqg1"]
+
+[ext_resource type="PackedScene" uid="uid://chwl06btaocce" path="res://game/scenes/classic_club_select.tscn" id="2_ois1v"]
+[ext_resource type="Script" path="res://game/scripts/classic_club_select_menu.gd" id="2_uqxug"]
+
+[node name="ClassicClubSelectMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_uqxug")
+
+[node name="ClassicClubSelect" parent="." instance=ExtResource("2_ois1v")]
+layout_mode = 1

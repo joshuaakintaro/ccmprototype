@@ -1,0 +1,14 @@
+[
+  {
+	"ability" : {
+	  "customer_ability_test" : {
+		"name" : "Test Ability That Affects Customers",
+		"description" : "An Ability currently being used to test out customer-facing abilities."
+		},
+	  "host_ability_test" : {
+		"name" : "Test Ability That Affects Hosts",
+		"description" : "An Ability currently beig used to test out abilities than can affect hosts."
+		},
+		},
+	},
+]

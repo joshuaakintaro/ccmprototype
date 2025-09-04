@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv0uvr8akvfud"]
+
+[ext_resource type="Script" path="res://game/scripts/host_select_character.gd" id="1_6u4o8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g3r2h"]
+size = Vector2(100, 100)
+
+[node name="HostSelectCharacter" type="Area2D"]
+position = Vector2(258, 151)
+script = ExtResource("1_6u4o8")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_g3r2h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,0 +1,38 @@
+{
+	"ability" : {
+		"customer_affecting_ability_test" : {
+			"special_name" : "Customer Affect Ability",
+			"type" : "service",
+			"target" : "customer",
+			"effect_data" : {
+				"stat" : "happiness",
+			},
+			"max_value" : true,
+			"time" : 3,
+			"cooldown" : 20,
+		},
+		"host_affecting_ability_test" : {
+			"special_name" : "Host Affect Ability",
+			"type" : "support",
+			"target" : "host",
+			"effect_data" : {
+				"big_stat" : "status",
+				"sub_stat" : "stamina",
+			},
+			"max_value" : true,
+			"time" : 3,
+			"cooldown" : 30,
+		},
+		"all_customer_affecting_ability_test" : {
+			"special_name" : "Customer Stream Affect Ability",
+			"type" : "service",
+			"target" : "all_customers",
+			"effect_data" : {
+				"stat" : "spending_power",
+			},
+			"max_value" : true,
+			"time" : 5,
+			"cooldown" : 20,
+		},
+	},
+}

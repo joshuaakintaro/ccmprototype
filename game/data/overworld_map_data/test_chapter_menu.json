@@ -1,0 +1,14 @@
+{
+	"test_chapter" : {
+		"name" : "Test Chapter",
+		"summary" : "This is a test chapter.",
+		"artwork" : "test_chapter_artwork.png",
+		"scene" : "visual_novel_ui_manager.tscn",
+		"checkpoints" : {
+			"checkpoint_1" : {
+				"name" : "Testface Speaks",
+				"line" : 3,
+			}
+		}
+	}
+}

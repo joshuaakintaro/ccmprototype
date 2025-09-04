@@ -1,0 +1,146 @@
+[
+	{
+		"name": "Johnny",
+		"appearance": {
+			"allure": 10,
+			"cuteness": 10,
+			"elegance": 10,
+			"striking": 10,
+		},
+		"status" : {
+			"stamina": 100,
+			"mood": 100,
+		},
+		"performance" : {
+			"charm": 10,
+			"empathy": 10,
+			"physical_resilience": 10,
+			"emotional_resilience": 10,
+			"luck": 10,
+		},
+		"special" : {
+			"skill_id": "host_affecting_skill_test",
+			"ability_id": "host_affecting_ability_test",
+		},
+	},
+	{
+		"name": "Cass",
+		"appearance": {
+			"allure": 20,
+			"cuteness": 0,
+			"elegance": 15,
+			"striking": 20,
+		},
+		"status" : {
+			"stamina": 200,
+			"mood": 50,
+		},
+		"performance" : {
+			"charm": 20,
+			"empathy": 15,
+			"physical_resilience": 5,
+			"emotional_resilience": 4,
+			"luck": 1,
+		},
+		"special" : {
+			"skill_id": "customer_affecting_skill_test",
+			"ability_id": "customer_affecting_ability_test",
+		},
+	},
+	{
+		"name": "Bessy",
+		"appearance": {
+			"allure" : 5,
+			"cuteness" : 10,
+			"elegance" : 20,
+			"striking" : 5,
+		},
+		"status" : {
+			"stamina" : 100,
+			"mood" : 200,
+		},
+		"performance" : {
+			"charm": 0,
+			"empathy": 5,
+			"physical_resilience": 10,
+			"emotional_resilience": 5,
+			"luck": 10,
+		},
+		"special" : {
+			"skill_id": "all_customer_affecting_skill_test",
+			"ability_id": "all_customer_affecting_ability_test",
+		},
+	},
+	{
+		"name": "Boris",
+		"appearance": {
+			"allure": 10,
+			"cuteness": 10,
+			"elegance": 10,
+			"striking": 10,
+		},
+		"status" : {
+			"stamina": 100,
+			"mood": 100,
+		},
+		"performance" : {
+			"charm": 10,
+			"empathy": 10,
+			"physical_resilience": 10,
+			"emotional_resilience": 10,
+			"luck": 10,
+		},
+		"special" : {
+			"skill_id": "host_affecting_skill_test",
+			"ability_id": "host_affecting_ability_test",
+		},
+	},
+	{
+		"name": "Madeline",
+		"appearance": {
+			"allure": 20,
+			"cuteness": 0,
+			"elegance": 15,
+			"striking": 20,
+		},
+		"status" : {
+			"stamina": 200,
+			"mood": 50,
+		},
+		"performance" : {
+			"charm": 20,
+			"empathy": 15,
+			"physical_resilience": 5,
+			"emotional_resilience": 4,
+			"luck": 1,
+		},
+		"special" : {
+			"skill_id": "customer_affecting_skill_test",
+			"ability_id": "customer_affecting_ability_test",
+		},
+	},
+	{
+		"name": "Joanna",
+		"appearance": {
+			"allure" : 5,
+			"cuteness" : 10,
+			"elegance" : 20,
+			"striking" : 5,
+		},
+		"status" : {
+			"stamina" : 100,
+			"mood" : 200,
+		},
+		"performance" : {
+			"charm": 0,
+			"empathy": 5,
+			"physical_resilience": 10,
+			"emotional_resilience": 5,
+			"luck": 10,
+		},
+		"special" : {
+			"skill_id": "all_customer_affecting_skill_test",
+			"ability_id": "all_customer_affecting_ability_test",
+		},
+	},
+]

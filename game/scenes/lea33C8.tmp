@@ -1,0 +1,127 @@
+[gd_scene load_steps=4 format=3 uid="uid://1uyqjewqb2ry"]
+
+[ext_resource type="Theme" uid="uid://bywqqu0lkvhdn" path="res://game/ui/ccm_theme.tres" id="1_br2mk"]
+[ext_resource type="Script" path="res://game/scripts/leaderboards_menu.gd" id="2_5osm8"]
+[ext_resource type="PackedScene" uid="uid://b7xonh74qh6sd" path="res://game/scenes/leaderboard_table.tscn" id="3_f1jw4"]
+
+[node name="LeaderboardsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_br2mk")
+script = ExtResource("2_5osm8")
+leaderboard_table = ExtResource("3_f1jw4")
+
+[node name="Leaderboards" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+clip_tabs = false
+
+[node name="General" type="TabContainer" parent="Leaderboards"]
+visible = false
+layout_mode = 2
+current_tab = 0
+metadata/_tab_index = 0
+
+[node name="NetWorth" type="TabContainer" parent="Leaderboards/General"]
+layout_mode = 2
+current_tab = 0
+metadata/_tab_index = 0
+
+[node name="LeaderboardTable" parent="Leaderboards/General/NetWorth" instance=ExtResource("3_f1jw4")]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="ManagerRating" type="TabContainer" parent="Leaderboards/General"]
+visible = false
+layout_mode = 2
+current_tab = 0
+metadata/_tab_index = 1
+
+[node name="LeaderboardTable" parent="Leaderboards/General/ManagerRating" instance=ExtResource("3_f1jw4")]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Ranked" type="TabContainer" parent="Leaderboards"]
+layout_mode = 2
+current_tab = 0
+metadata/_tab_index = 1
+
+[node name="ELO" type="TabContainer" parent="Leaderboards/Ranked"]
+layout_mode = 2
+current_tab = 0
+tabs_visible = false
+metadata/_tab_index = 0
+
+[node name="LeaderboardTable" parent="Leaderboards/Ranked/ELO" instance=ExtResource("3_f1jw4")]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MostMatches" type="TabContainer" parent="Leaderboards/Ranked"]
+visible = false
+layout_mode = 2
+current_tab = 0
+tabs_visible = false
+metadata/_tab_index = 1
+
+[node name="LeaderboardTable" parent="Leaderboards/Ranked/MostMatches" instance=ExtResource("3_f1jw4")]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.565
+anchor_top = 0.4
+anchor_right = 0.565
+anchor_bottom = 0.4
+offset_left = 1.79999
+offset_top = -188.0
+offset_right = 38.8
+offset_bottom = -145.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "X"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 721.0
+offset_top = -139.0
+offset_right = -511.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_group_ = true
+
+[node name="BackButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "<"
+
+[node name="ForwardButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = ">"
+
+[connection signal="tab_changed" from="Leaderboards" to="." method="_on_leaderboards_tab_changed"]
+[connection signal="tab_changed" from="Leaderboards/General" to="." method="_on_general_tab_changed"]
+[connection signal="tab_changed" from="Leaderboards/Ranked" to="." method="_on_ranked_tab_changed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/ForwardButton" to="." method="_on_forward_button_pressed"]

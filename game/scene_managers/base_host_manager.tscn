@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://duuiqkpoajf75"]
+
+[ext_resource type="PackedScene" uid="uid://1n5fcg6pg7jq" path="res://game/scenes/base_host.tscn" id="1_cmxig"]
+
+[node name="BaseHostManager" type="Node2D"]
+
+[node name="BaseHost" parent="." instance=ExtResource("1_cmxig")]

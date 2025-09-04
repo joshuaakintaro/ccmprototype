@@ -1,0 +1,12 @@
+[
+	{
+	"key" : "johnny",
+	"image" : "test_johnny.png",
+	"colour" : "RED",
+	},
+	{
+		"key" : "Madeline",
+		"image" : "test_madeline.png",
+		"colour" : "ORANGE"
+	}
+]

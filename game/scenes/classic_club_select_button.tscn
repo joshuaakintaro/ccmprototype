@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3vg745inrwag"]
+
+[ext_resource type="Script" path="res://game/scripts/classic_club_select_button.gd" id="1_e53pv"]
+
+[node name="ClassicClubSelectButton" type="Button"]
+offset_right = 41.0
+offset_bottom = 31.0
+text = "Test"
+script = ExtResource("1_e53pv")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

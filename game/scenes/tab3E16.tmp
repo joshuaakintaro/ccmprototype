@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm8wyvcnc16im"]
+
+[ext_resource type="Script" path="res://game/scripts/table.gd" id="1_4urlf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghg5v"]
+
+[node name="Table" type="Area2D"]
+collision_mask = 3
+script = ExtResource("1_4urlf")
+
+[node name="OrderTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ghg5v")
+debug_color = Color(0.839226, 0.364323, 0.332494, 0.42)
+
+[node name="SpendingFrequencyTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="timeout" from="OrderTimer" to="." method="_on_order_timer_timeout"]
+[connection signal="timeout" from="SpendingFrequencyTimer" to="." method="_on_spending_frequency_timer_timeout"]

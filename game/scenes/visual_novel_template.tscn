@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdtfd3kw770y5"]
+
+[ext_resource type="PackedScene" uid="uid://curu0ndmykruo" path="res://game/scene_managers/visual_novel_ui_manager.tscn" id="1_laj42"]
+[ext_resource type="Script" path="res://game/scripts/visual_novel_template.gd" id="1_ty66k"]
+
+[node name="VisualNovelTemplate" type="Node2D"]
+script = ExtResource("1_ty66k")
+
+[node name="VisualNovelUIManager" parent="." instance=ExtResource("1_laj42")]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcmfntavw5ap"]
+
+[sub_resource type="GDScript" id="GDScript_6csws"]
+script/source = "extends Timer
+"
+
+[node name="EffectTimer" type="Timer"]
+script = SubResource("GDScript_6csws")

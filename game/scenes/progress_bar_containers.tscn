@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmey4n0durih7"]
+
+[ext_resource type="Texture2D" uid="uid://clpxpob7lvf3p" path="res://game/assets/sprites/godot_prototype_assets_by_kpids/classic/tiles/platform.png" id="1_i08ig"]
+[ext_resource type="Texture2D" uid="uid://fh265qd1aqub" path="res://game/assets/sprites/godot_prototype_assets_by_kpids/greyscale/tiles/platform.png" id="2_6ayi6"]
+
+[node name="ProgressBarContainers" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HPBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+value = 50.0
+texture_under = ExtResource("1_i08ig")
+
+[node name="MPBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+texture_under = ExtResource("2_6ayi6")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmmuf8yqwghge"]
+
+[ext_resource type="Script" path="res://game/scripts/bullet_manager.gd" id="1_7vivh"]
+[ext_resource type="PackedScene" uid="uid://ce3kp5vji1rpt" path="res://game/scenes/bullet_host_select_menu.tscn" id="2_grk7u"]
+
+[node name="BulletManager" type="Node2D"]
+script = ExtResource("1_7vivh")
+
+[node name="BulletHostSelectMenu" parent="." instance=ExtResource("2_grk7u")]

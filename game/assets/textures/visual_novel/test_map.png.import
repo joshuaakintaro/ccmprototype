@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://bpl2x245cpcou"
+path="res://.godot/imported/test_map.png-5fa11146cfa1755dc92655c4a9b36c40.image"
+
+[deps]
+
+source_file="res://game/assets/textures/visual_novel/test_map.png"
+dest_files=["res://.godot/imported/test_map.png-5fa11146cfa1755dc92655c4a9b36c40.image"]
+
+[params]
+

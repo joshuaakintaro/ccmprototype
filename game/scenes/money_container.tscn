@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8gtxtvnh6ynx"]
+
+[ext_resource type="Script" path="res://game/scripts/player_money_container.gd" id="1_2fyxb"]
+[ext_resource type="Script" path="res://game/scripts/player_money_label.gd" id="1_prfv2"]
+
+[node name="MoneyContainer" type="VBoxContainer"]
+size_flags_horizontal = 0
+script = ExtResource("1_2fyxb")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="PlayerMoneyLabel" type="RichTextLabel" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Player 1: $ 0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("1_prfv2")

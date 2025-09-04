@@ -1,0 +1,15 @@
+{
+	"level" : {
+		"default" : {
+			"type_bias" : {
+				"Blue-Collar_Worker" : 10,
+				"Elite" : 5,
+			},
+		},
+		"1" : {
+			"type_bias" : {
+				"Blue-Collar Worker" : 10,
+			},
+		},
+	},
+}

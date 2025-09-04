@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://5ahbmra2dmxf"]
+
+[ext_resource type="Script" path="res://game/scripts/classic_scenario_select.gd" id="1_01sd8"]
+[ext_resource type="PackedScene" uid="uid://dm3p74qio5orn" path="res://game/scenes/classic_scenario_button.tscn" id="2_hy65j"]
+
+[node name="ClassicScenarioSelect" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_01sd8")
+classic_scenario_button_scene = ExtResource("2_hy65j")

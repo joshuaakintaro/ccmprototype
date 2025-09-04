@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://du35u4psopdet"]
+
+[ext_resource type="Script" path="res://game/scripts/custom_host_select_menu.gd" id="1_8tppp"]
+[ext_resource type="PackedScene" uid="uid://dtwcih4xaex3i" path="res://game/scenes/chosen_host_area.tscn" id="2_eudc8"]
+[ext_resource type="PackedScene" uid="uid://cv0uvr8akvfud" path="res://game/scenes/host_select_character.tscn" id="2_ngd3n"]
+[ext_resource type="PackedScene" uid="uid://djmty3w4x6mrl" path="res://game/scenes/custom_select_menu.tscn" id="3_8mo3y"]
+
+[node name="CustomHostSelectMenu" type="Node2D"]
+script = ExtResource("1_8tppp")
+host_select_character_scene = ExtResource("2_ngd3n")
+
+[node name="ChosenHostArea" parent="." instance=ExtResource("2_eudc8")]
+position = Vector2(401, 596)
+
+[node name="ChosenHostArea2" parent="." instance=ExtResource("2_eudc8")]
+position = Vector2(623, 598)
+
+[node name="ChosenHostArea3" parent="." instance=ExtResource("2_eudc8")]
+position = Vector2(855, 600)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CustomRulesButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+text = "CUSTOM RULES
+"
+
+[node name="CustomSelectMenu" parent="CanvasLayer" instance=ExtResource("3_8mo3y")]
+visible = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 1000.0
+offset_top = 594.0
+offset_right = 1114.0
+offset_bottom = 634.0
+metadata/_edit_group_ = true
+
+[node name="StartButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+text = "START"
+
+[node name="ResetButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+text = "RESET"
+
+[connection signal="pressed" from="CanvasLayer/CustomRulesButton" to="." method="_on_custom_rules_button_pressed"]
+[connection signal="exit_custom_menu" from="CanvasLayer/CustomSelectMenu" to="." method="_on_custom_select_menu_exit_custom_menu"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]

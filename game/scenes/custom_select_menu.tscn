@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://djmty3w4x6mrl"]
+
+[ext_resource type="Script" path="res://game/scripts/custom_select_menu.gd" id="1_fv01g"]
+
+[node name="CustomSelectMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fv01g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.503125
+anchor_top = 0.0833333
+anchor_right = 0.503125
+anchor_bottom = 0.0833333
+offset_left = -101.0
+offset_top = -20.0
+offset_right = 101.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="SomeLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Some Label"
+
+[node name="SomeButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Some Button"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.596094
+anchor_top = 0.0597222
+anchor_right = 0.622656
+anchor_bottom = 0.0916667
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "X"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/SomeButton" to="." method="_on_some_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://xc6aujeesq1f"]
+
+[ext_resource type="Script" path="res://game/scripts/versus_host_select_menu.gd" id="1_pilqa"]
+[ext_resource type="PackedScene" uid="uid://cv0uvr8akvfud" path="res://game/scenes/host_select_character.tscn" id="2_e3b65"]
+[ext_resource type="PackedScene" uid="uid://dtwcih4xaex3i" path="res://game/scenes/chosen_host_area.tscn" id="3_uverx"]
+[ext_resource type="PackedScene" uid="uid://djmty3w4x6mrl" path="res://game/scenes/custom_select_menu.tscn" id="4_14wj0"]
+[ext_resource type="PackedScene" uid="uid://d1l4kr7fklkik" path="res://game/scenes/gameplay_map_select.tscn" id="5_83ddo"]
+
+[node name="VersusHostSelectMenu" type="Node2D"]
+script = ExtResource("1_pilqa")
+host_select_character_scene = ExtResource("2_e3b65")
+
+[node name="PlayerHostArea" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(50, 622)
+
+[node name="PlayerHostArea2" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(250, 622)
+
+[node name="PlayerHostArea3" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(450, 622)
+
+[node name="EnemyHostArea" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(640, 622)
+
+[node name="EnemyHostArea2" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(840, 622)
+
+[node name="EnemyHostArea3" parent="." instance=ExtResource("3_uverx")]
+position = Vector2(1040, 621)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameplayMapSelect" parent="CanvasLayer" instance=ExtResource("5_83ddo")]
+visible = false
+
+[node name="VersusSelect" type="CanvasLayer" parent="CanvasLayer"]
+
+[node name="CustomRulesButton" type="Button" parent="CanvasLayer/VersusSelect"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 31.0
+grow_horizontal = 2
+text = "CUSTOM RULES
+"
+
+[node name="CustomSelectMenu" parent="CanvasLayer/VersusSelect" instance=ExtResource("4_14wj0")]
+visible = false
+offset_top = 96.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VersusSelect"]
+offset_left = 1099.0
+offset_top = 603.0
+offset_right = 1213.0
+offset_bottom = 643.0
+metadata/_edit_group_ = true
+
+[node name="StartButton" type="Button" parent="CanvasLayer/VersusSelect/HBoxContainer"]
+layout_mode = 2
+text = "START"
+
+[node name="ResetButton" type="Button" parent="CanvasLayer/VersusSelect/HBoxContainer"]
+layout_mode = 2
+text = "RESET"
+
+[connection signal="pressed" from="CanvasLayer/VersusSelect/CustomRulesButton" to="." method="_on_custom_rules_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VersusSelect/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VersusSelect/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://byumohgnv3wnl"]
+
+[ext_resource type="Script" path="res://game/scripts/gameplay_host.gd" id="1_6y6ip"]
+[ext_resource type="PackedScene" uid="uid://1n5fcg6pg7jq" path="res://game/scenes/base_host.tscn" id="2_mjs76"]
+[ext_resource type="Texture2D" uid="uid://dfi6rdage0fn1" path="res://game/assets/sprites/godot_prototype_assets_by_kpids/greyscale/tiles/logo.png" id="3_rbwqf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_we57t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rbwqf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GameplayHost" type="Node2D"]
+script = ExtResource("1_6y6ip")
+
+[node name="BaseHost" parent="." instance=ExtResource("2_mjs76")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_we57t")

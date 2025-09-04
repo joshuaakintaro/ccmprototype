@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="CCM Prototype"
+run/main_scene="res://game/scene_managers/level_manager.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Utils="*res://game/scripts/utils.gd"
+Global="*res://game/scripts/global.gd"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://game/assets/": "teal",
+"res://game/data/": "red",
+"res://game/scene_managers/": "orange",
+"res://game/scenes/": "orange",
+"res://game/scripts/": "green",
+"res://game/ui/": "green"
+}
+
+[importer_defaults]
+
+image={}
